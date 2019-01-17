@@ -1,0 +1,4 @@
+---
+applications:
+- name: concourse-maven-cf-example
+  buildpack: java_buildpack
