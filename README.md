@@ -18,6 +18,8 @@ You should also have logged in with the fly CLI to your target Concourse CI serv
 
 Copy pipeline-secrets-example.yml to pipeline-secrets.yml and update with your values.
 
+You should not set actual secrets there since they will still be visible with the fly `get-pipeline` command, instead use a credentials manager like AWS Secrets Manager and use `((secret-param-name))` as the pipeline param value, e.g.: `cf-password: ((cf-password))`.
+
 Replace `<cf-target>` with the target name assigned to your Concourse server upon login.
 
 ```
