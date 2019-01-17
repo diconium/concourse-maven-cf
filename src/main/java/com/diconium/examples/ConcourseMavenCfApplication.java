@@ -12,7 +12,7 @@ public class ConcourseMavenCfApplication {
 
 	@RequestMapping
 	public @ResponseBody String hello() {
-		return "hello serenity!";
+		return "hello serenity world!";
 	}
 
 	public static void main(String[] args) {
