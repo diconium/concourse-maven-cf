@@ -2,3 +2,4 @@
 applications:
 - name: concourse-maven-cf-example
   buildpack: java_buildpack
+  path: target/concourse-maven-cf-0.0.1.jar
